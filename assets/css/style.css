@@ -183,14 +183,14 @@
   display: none;
 }
 
-.radio-input + label {
+.radio-input + span {
   position: relative;
   display: inline-block;
   padding: 3px 3px 3px 20px;
   cursor: pointer;
 }
 
-.radio-input + label::before {
+.radio-input + span::before {
   border: 1px solid #d9d9d9;
   border-radius: 50%;
   background-color:#fbfbfb;
@@ -203,7 +203,7 @@
   width: 15px;
 }
 
-.radio-input:checked + label::after {
+.radio-input:checked + span::after {
   border: 1px solid #d9d9d9;
   border-radius: 50%;
   background-color:#01bfbd;

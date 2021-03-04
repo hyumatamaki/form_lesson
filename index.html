@@ -30,82 +30,82 @@
         <form action="#" method="POST">
           <div class="inner name-box">
             <div class="name is-halfWidth">
-              <p><label class="label-text">名字<span class="alert">※</span></label></p>
+              <p class="label-text">名字<span class="alert">※</span></p>
               <input type="text" name="last_name" class="input_area" required>
             </div>
             <div class="name is-halfWidth">
-              <p><label  class="label-text">名前<span class="alert">※</span></p></label>
+              <p class="label-text">名前<span class="alert">※</span></p>
               <input type="text" name="first_name" class="input_area" required>
             </div>
           </div>
           <div class="inner gender">
-            <p><label class="label-text">性別</label></p>
+            <p class="label-text">性別</p>
             <div class="gender-contents">
-              <div class="gender-content">
-                <p><input type="radio" name="gender" value="男性" id="male" class="radio-input">
-                <label for="male" class="gender-input">男性</label></p>
-              </div>
-              <div class="gender-content">
-                <p><input type="radio" name="gender" value="女性" id="female" class="radio-input">
-                  <label for="female" class="gender-input">女性</label></p>
-              </div>
-              <div class="gender-content">
-                <p><input type="radio" name="gender" value="その他" id="another" class="radio-input">
-                  <label for="another" class="gender-input">その他</label></p>
-              </div> 
+              <label class="gender-content">
+                <input type="radio" name="gender" value="male" id="male" class="radio-input">
+                <span>男性</span>
+              </label>
+              <label class="gender-content">
+                <input type="radio" name="gender" value="female" id="female" class="radio-input">
+                <span>女性</span>
+              </label>
+              <label class="gender-content">
+                <input type="radio" name="gender" value="another" id="another" class="radio-input">
+                <span>その他</span>
+              </label> 
             </div>
           </div>
-          <div class="inner from">
-            <p><label class="label-text">出身</label></p>
-            <div class="select-area is-halfWidth">
-              <select name="name" class="input_area origin-input">
-                <option vakue="who">東京</option>
-                <option vakue="who">千葉</option>
-                <option vakue="who">埼玉</option>
-                <option vakue="who">神奈川</option>
+          <div class="inner from is-halfWidth">
+            <p class="label-text">出身</p>
+            <div class="select-area">
+              <select name="origin" class="input_area origin-input">
+                <option value="tokyo">東京</option>
+                <option value="tiba">千葉</option>
+                <option value="saitama">埼玉</option>
+                <option value="kanagawa">神奈川</option>
               </select>
             </div>
           </div>  
           <div class="inner mail">
-            <p><label class="label-text">Eメール<span class="alert"> ※</span></label></p>
+            <p class="label-text">Eメール<span class="alert"> ※</span></p>
             <input type="email" class="is-fullWidth input_area" name="e-mail" placeholder="ex）hoge@example.com" required>
           </div>
           <div class="inner number">
-            <p><label class="label-text">電話番号</label></p>
+            <p class="label-text">電話番号</p>
             <input type="text" class="is-fullWidth input_area" name="phone-number" placeholder="ex）09012345678">
           </div>
           <div class="inner Passward">
-            <p><label class="label-text">パスワード<span class="alert"> ※</span></label></p>
-            <input type="password" class="is-fullWidth input_area" required>
+            <p class="label-text">パスワード<span class="alert"> ※</span></p>
+            <input type="password" class="is-fullWidth input_area" name = "password" required>
           </div>
           <div class="inner again-Passward">
-            <p><label class="label-text">パスワード(再確認用)<span class="alert"> ※</span></label></p>
-            <input type="password" class="is-fullWidth input_area" required>
+            <p class="label-text">パスワード(再確認用)<span class="alert"> ※</span></p>
+            <input type="password" class="is-fullWidth input_area" name = "password-reconfirm" required>
           </div>
           <div class="inner select-checkbox">
-            <p><label class="label-text">希望コース</label></p>
+            <p class="label-text">希望コース</p>
             <div class="select-option">
               <label>
-                <input type="checkbox" name="checkbox[]" class="checkbox-input">
-                <span class="checkbox-parts">フロントエンド</span>
+                <input type="checkbox" name="checkbox[]" value="frontend" class="checkbox-input">
+                <span class="checkbox-parts" for="frontend">フロントエンド</span>
               </label>
             </div>
             <div class="select-option">
               <label>
-                <input type="checkbox" name="checkbox[]" class="checkbox-input">
-                <span class="checkbox-parts">バックエンド</span>
+                <input type="checkbox" name="checkbox[]" value="backend" class="checkbox-input">
+                <span class="checkbox-parts" for="backend">バックエンド</span>
               </label>            
             </div>
             <div class="select-option">
               <label>
-                <input type="checkbox" name="checkbox[]" class="checkbox-input">
-                <span class="checkbox-parts">アプリ</span>
+                <input type="checkbox" name="checkbox[]" value="application" class="checkbox-input">
+                <span class="checkbox-parts" for="app">アプリ</span>
               </label>            
             </div>
           </div>
 
           <div class="inner remarks">
-            <p><label class="label-text">備考</label></p>
+            <p class="label-text">備考</p>
             <textarea type="text" class="is-halfWidth input_area" name="remark" placeholder="何かあればご記入ください"></textarea>
           </div>
           <div class="inner create__btn">
